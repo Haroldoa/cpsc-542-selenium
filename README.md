@@ -10,8 +10,8 @@ For full details on project setup and submission, please refer to the full sylla
 
 - **Q. What is the group project?**
   - A. The group project has two parts:
-  Part A: The Python unit testing of Odoo version 15, module om_hospital and module fleet
-  Part B: The client-side Selenium testing of Odoo version 15, module om_hospital and module fleet
+    - Part A: The Python unit testing of Odoo version 15, module om_hospital and module fleet
+    - Part B: The client-side Selenium testing of Odoo version 15, module om_hospital and module fleet
 - **Q. How do we install Odoo version 15?**
   - A. Your group may want to read several tutorials:
     - https://linuxhint.com/install-odoo-15-ubuntu-22-04/
