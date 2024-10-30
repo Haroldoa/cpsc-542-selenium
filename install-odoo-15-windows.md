@@ -10,3 +10,4 @@ Need to install odoo 15 and fleet and hospital apps. Specifically 15 because the
    3. Click the tiles on localhost:8069 > go to apps > update apps list > search hospital > install om_hospital
    4. Stay on the page while it loads
    5. Now you can see hospital from top left tiles as an installed app and create patients
+4. Install fleet app from app list
