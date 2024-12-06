@@ -7,7 +7,7 @@ from selenium.webdriver.chrome.options import Options
 
 
 chrome_options = Options()
-chrome_driver_path = '../ning_files/drivers/chromedriver/chromedriver.exe'  # Path to your ChromeDriver
+chrome_driver_path = './drivers/chromedriver/chromedriver.exe'  # Path to your ChromeDriver
 
 
 # Use the Service class to specify driver path
