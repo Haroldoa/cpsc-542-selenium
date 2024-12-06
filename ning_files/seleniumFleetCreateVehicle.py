@@ -59,8 +59,14 @@ time.sleep(5)
 # xpath changes by id of database so find input by div parent
 vehicle_form_input_model_parent_div = driver.find_element(By.XPATH, '/html/body/div[1]/div/div[2]/div/div[1]/div[2]/div[4]/h1/div/div[1]/div')
 vehicle_form_input_model = vehicle_form_input_model_parent_div.find_element(By.TAG_NAME, "input")
-vehicle_form_input_model.send_keys("Audi/A1")
+vehicle_form_input_model.click()
 time.sleep(1)
+# dropdown is created as not sibling or child so use enter
+vehicle_form_input_model.send_keys(Keys.RETURN)
+time.sleep(5)
+expected_model_text = "Audi/A1"
+# vehicle_form_model_dropdown_item1.click()
+# time.sleep(2)
 print("Step6 passed")
 # save vehicle button
 save_button = driver.find_element(By.XPATH, '/html/body/div[1]/div/div[1]/div[2]/div[1]/div/div/div[2]/button[1]')
@@ -68,9 +74,9 @@ save_button.click()
 time.sleep(3)
 print("Step7 passed")
 # verify model name is same in show vehicle details page
-vehicle_show_model = driver.find_element(By.XPATH, '//*[@id="o_field_input_129"]/span')
-expected_text = "Audi/A1"
-assert expected_text in nav_bar_content, f"Expected text '{expected_text}' not found in '{vehicle_show_model}'"
+vehicle_show_model = driver.find_element(By.XPATH, '/html/body/div[1]/div/div[2]/div/div[1]/div[2]/div[4]/h1/a/span')
+expected_text = expected_model_text
+assert expected_text in vehicle_show_model.text, f"Expected text '{expected_text}' not found in '{vehicle_show_model.text}'"
 print("Step8 passed")
 
 
