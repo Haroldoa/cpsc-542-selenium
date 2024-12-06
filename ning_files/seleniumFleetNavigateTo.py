@@ -37,4 +37,16 @@ time.sleep(3)
 search_bar.send_keys(Keys.RETURN)
 time.sleep(5)
 print(driver.current_url)
+
+
+# navigate to fleet
+driver.get("http://localhost:8069/web#menu_id=97&action=128")
+print("Step4 passed")
+time.sleep(3)
+nav_bar_title = driver.find_element(By.XPATH, "/html/body/header/nav/a")
+nav_bar_content = nav_bar_title.text
+expected_text = "Fleet"
+assert expected_text in nav_bar_content, f"Expected text '{expected_text}' not found in '{nav_bar_content}'"
+# The assertion will raise an AssertionError if the condition is not met.
+print("Step5 passed")
 driver.close()
