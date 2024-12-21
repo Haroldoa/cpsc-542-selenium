@@ -24,10 +24,24 @@ Get to Lunch App
 Order and get confirmation
     Click Meal
     Sleep   3s
-    Click Save
+    Click Add To Cart
+    Sleep   3s
+    Click Order
     Sleep   3s
     Page Should Contain    Your order
-    Page Should Contain    lunchKeyword1.robotReceived
+Navigate to Manager
+    Click Manager
+    Sleep    3s
+    Click Control Vendors
+    Sleep    3s
+    Expand Orders From Restaurant
+    Sleep    3s
+    Page Should Contain    Status
+    Page Should Contain    Ordered
+    Sleep    3s
+    Click Confirm Order
+    Sleep    3s
+
     [Teardown]    Close Browser
 
 *** Keywords ***
@@ -53,13 +67,25 @@ Click Lunch
     Click Element       //*[contains(text(),'Lunch')]
 
 Click Meal
-    Click Element       //*[contains(text(),'Cheese And Ham')]
+    Click Element       //*[contains(text(),'The Country')]
 
 Click Save
     Click Element       //*[contains(text(),'Save')]
 
 Click Add To Cart
     Click Element       //*[contains(text(),'Add To Cart')]
+
+Click Manager
+    Click Element       //*[contains(text(),'Manager')]
+
+Click Control Vendors
+    Click Element       //*[contains(text(),'Control Vendors')]
+
+Expand Orders from Restaurant
+    Click Element       //*[contains(text(),'Coin gourmand')]
+
+Click Confirm Order
+    Click Element       //*[contains(text(),'Confirm')]
 
 Welcome Page Should Be Open
     Title Should Be    Odoo - Discuss

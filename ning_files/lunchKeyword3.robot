@@ -21,17 +21,16 @@ Get to Lunch App
     Sleep   3s
     Click Lunch
     Sleep   3s
-Order and get confirmation
-    Click Meal
+Go To Orders
+    Click My Lunch
     Sleep   3s
-    Click Add To Cart
+    Click My Order History
     Sleep   3s
-    Click Order
+    Expand Date
     Sleep   3s
-    Page Should Contain    Your order
-Teardown
-    Click Cancel Order
-    Sleep   4s
+    Price Should Not Be Empty
+    Product Name Should Not Be Empty
+
     [Teardown]    Close Browser
 
 *** Keywords ***
@@ -56,8 +55,11 @@ Click Menu
 Click Lunch
     Click Element       //*[contains(text(),'Lunch')]
 
+Click My Lunch
+    Click Element       //*[contains(text(),'My Lunch')]
+
 Click Meal
-    Click Element       //*[contains(text(),'Cheese And Ham')]
+    Click Element       //*[contains(text(),'The Country')]
 
 Click Save
     Click Element       //*[contains(text(),'Save')]
@@ -65,11 +67,31 @@ Click Save
 Click Add To Cart
     Click Element       //*[contains(text(),'Add To Cart')]
 
-Click Order
-    Click Element       //*[contains(text(),'Order now')]
+Click Manager
+    Click Element       //*[contains(text(),'Manager')]
 
-Click Cancel Order
-    Click Element       //*[contains(@class,'fa-trash')]
+Click Control Vendors
+    Click Element       //*[contains(text(),'Control Vendors')]
+
+Expand Orders from Restaurant
+    Click Element       //*[contains(text(),'Coin gourmand')]
+
+Click Confirm Order
+    Click Element       //*[contains(text(),'Confirm')]
+
+Click My Order History
+    Click Element       //*[contains(text(),'My Order History')]
+
+Expand Date
+    Click Element      //*[contains(@class, 'o_group_name')]
+
+Price Should Not Be Empty
+    ${price}=    Get Text    xpath=//span[@name="price"]
+    Should Not Be Empty    ${price}
+
+Product Name Should Not Be Empty
+    ${product}=    Get Text    xpath=//td[@name="product_id"]
+    Should Not Be Empty    ${product}
 
 Welcome Page Should Be Open
     Title Should Be    Odoo - Discuss
