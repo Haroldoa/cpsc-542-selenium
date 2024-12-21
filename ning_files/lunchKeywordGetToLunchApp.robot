@@ -7,7 +7,7 @@ ${LOGIN URL}      http://localhost:8069/web/login/
 ${BROWSER}        Chrome
 
 *** Test Cases ***
-Get to Lunch App
+Valid Login
     Open Browser To Login Page
     Sleep   3s
     Input Username    haroldoalt@gmail.com
@@ -21,13 +21,6 @@ Get to Lunch App
     Sleep   3s
     Click Lunch
     Sleep   3s
-Order and get confirmation
-    Click Meal
-    Sleep   3s
-    Click Save
-    Sleep   3s
-    Page Should Contain    Your order
-    Page Should Contain    lunchKeyword1.robotReceived
     [Teardown]    Close Browser
 
 *** Keywords ***
@@ -51,15 +44,6 @@ Click Menu
 
 Click Lunch
     Click Element       //*[contains(text(),'Lunch')]
-
-Click Meal
-    Click Element       //*[contains(text(),'Cheese And Ham')]
-
-Click Save
-    Click Element       //*[contains(text(),'Save')]
-
-Click Add To Cart
-    Click Element       //*[contains(text(),'Add To Cart')]
 
 Welcome Page Should Be Open
     Title Should Be    Odoo - Discuss
