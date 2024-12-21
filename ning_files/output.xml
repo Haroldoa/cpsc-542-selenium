@@ -1,205 +1,183 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.1.1 (Python 3.12.1 on win32)" generated="2024-12-20T22:59:07.366191" rpa="false" schemaversion="5">
-<suite id="s1" name="lunchKeyword3" source="C:\Github\cpsc-542-selenium\ning_files\lunchKeyword3.robot">
+<robot generator="Robot 7.1.1 (Python 3.12.1 on win32)" generated="2024-12-20T23:10:26.758156" rpa="false" schemaversion="5">
+<suite id="s1" name="lunchKeyword4" source="C:\Github\cpsc-542-selenium\ning_files\lunchKeyword4.robot">
 <test id="s1-t1" name="Get to Lunch App" line="10">
 <kw name="Open Browser To Login Page">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-12-20T22:59:07.532356" level="INFO">Opening browser 'Chrome' to base url 'http://localhost:8069/web/login/'.</msg>
+<msg time="2024-12-20T23:10:26.934753" level="INFO">Opening browser 'Chrome' to base url 'http://localhost:8069/web/login/'.</msg>
 <arg>${LOGIN URL}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-12-20T22:59:07.532356" elapsed="2.321134"/>
+<status status="PASS" start="2024-12-20T23:10:26.934753" elapsed="2.422800"/>
 </kw>
 <kw name="Title Should Be" owner="SeleniumLibrary">
-<msg time="2024-12-20T22:59:09.857535" level="INFO">Page title is 'Login | My Website'.</msg>
+<msg time="2024-12-20T23:10:29.361172" level="INFO">Page title is 'Login | My Website'.</msg>
 <arg>Login | My Website</arg>
 <doc>Verifies that the current page title equals ``title``.</doc>
-<status status="PASS" start="2024-12-20T22:59:09.853490" elapsed="0.004045"/>
+<status status="PASS" start="2024-12-20T23:10:29.357553" elapsed="0.003619"/>
 </kw>
-<status status="PASS" start="2024-12-20T22:59:07.527592" elapsed="2.329943"/>
+<status status="PASS" start="2024-12-20T23:10:26.934753" elapsed="2.426419"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2024-12-20T22:59:12.858334" level="INFO">Slept 3 seconds.</msg>
+<msg time="2024-12-20T23:10:32.363142" level="INFO">Slept 3 seconds.</msg>
 <arg>3s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-12-20T22:59:09.858042" elapsed="3.000292"/>
+<status status="PASS" start="2024-12-20T23:10:29.362174" elapsed="3.000968"/>
 </kw>
 <kw name="Input Username">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-12-20T22:59:12.858334" level="INFO">Typing text 'haroldoalt@gmail.com' into text field 'login'.</msg>
+<msg time="2024-12-20T23:10:32.365699" level="INFO">Typing text 'haroldoalt@gmail.com' into text field 'login'.</msg>
 <arg>login</arg>
 <arg>${username}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-12-20T22:59:12.858334" elapsed="0.070840"/>
+<status status="PASS" start="2024-12-20T23:10:32.363142" elapsed="0.072145"/>
 </kw>
 <arg>haroldoalt@gmail.com</arg>
-<status status="PASS" start="2024-12-20T22:59:12.858334" elapsed="0.070840"/>
+<status status="PASS" start="2024-12-20T23:10:32.363142" elapsed="0.072145"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2024-12-20T22:59:15.929984" level="INFO">Slept 3 seconds.</msg>
+<msg time="2024-12-20T23:10:35.436893" level="INFO">Slept 3 seconds.</msg>
 <arg>3s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-12-20T22:59:12.929174" elapsed="3.000810"/>
+<status status="PASS" start="2024-12-20T23:10:32.436362" elapsed="3.000531"/>
 </kw>
 <kw name="Input Password">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-12-20T22:59:15.932598" level="INFO">Typing text 'openpgpwd' into text field 'password'.</msg>
+<msg time="2024-12-20T23:10:35.436893" level="INFO">Typing text 'openpgpwd' into text field 'password'.</msg>
 <arg>password</arg>
 <arg>${password}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-12-20T22:59:15.929984" elapsed="0.059873"/>
+<status status="PASS" start="2024-12-20T23:10:35.436893" elapsed="0.056725"/>
 </kw>
 <arg>openpgpwd</arg>
-<status status="PASS" start="2024-12-20T22:59:15.929984" elapsed="0.059873"/>
+<status status="PASS" start="2024-12-20T23:10:35.436893" elapsed="0.056725"/>
 </kw>
 <kw name="Submit Credentials">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-12-20T22:59:15.989857" level="INFO">Clicking element '//*[contains(text(),'Log in')]'.</msg>
+<msg time="2024-12-20T23:10:35.493618" level="INFO">Clicking element '//*[contains(text(),'Log in')]'.</msg>
 <arg>//*[contains(text(),'Log in')]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-12-20T22:59:15.989857" elapsed="1.911194"/>
+<status status="PASS" start="2024-12-20T23:10:35.493618" elapsed="1.763327"/>
 </kw>
-<status status="PASS" start="2024-12-20T22:59:15.989857" elapsed="1.911194"/>
+<status status="PASS" start="2024-12-20T23:10:35.493618" elapsed="1.763327"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2024-12-20T22:59:20.902127" level="INFO">Slept 3 seconds.</msg>
+<msg time="2024-12-20T23:10:40.258537" level="INFO">Slept 3 seconds.</msg>
 <arg>3s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-12-20T22:59:17.901652" elapsed="3.000475"/>
+<status status="PASS" start="2024-12-20T23:10:37.257825" elapsed="3.000712"/>
 </kw>
 <kw name="Welcome Page Should Be Open">
 <kw name="Title Should Be" owner="SeleniumLibrary">
-<msg time="2024-12-20T22:59:20.910183" level="INFO">Page title is 'Odoo - Discuss'.</msg>
+<msg time="2024-12-20T23:10:40.264428" level="INFO">Page title is 'Odoo - Discuss'.</msg>
 <arg>Odoo - Discuss</arg>
 <doc>Verifies that the current page title equals ``title``.</doc>
-<status status="PASS" start="2024-12-20T22:59:20.904672" elapsed="0.005511"/>
+<status status="PASS" start="2024-12-20T23:10:40.258537" elapsed="0.005891"/>
 </kw>
-<status status="PASS" start="2024-12-20T22:59:20.902127" elapsed="0.008056"/>
+<status status="PASS" start="2024-12-20T23:10:40.258537" elapsed="0.005891"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2024-12-20T22:59:23.910917" level="INFO">Slept 3 seconds.</msg>
+<msg time="2024-12-20T23:10:43.266109" level="INFO">Slept 3 seconds.</msg>
 <arg>3s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-12-20T22:59:20.910183" elapsed="3.000734"/>
+<status status="PASS" start="2024-12-20T23:10:40.265638" elapsed="3.000471"/>
 </kw>
 <kw name="Click Menu">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-12-20T22:59:23.910917" level="INFO">Clicking element 'xpath=//button[@title="Home Menu"]'.</msg>
+<msg time="2024-12-20T23:10:43.266109" level="INFO">Clicking element 'xpath=//button[@title="Home Menu"]'.</msg>
 <arg>xpath=//button[@title="Home Menu"]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-12-20T22:59:23.910917" elapsed="0.044270"/>
+<status status="PASS" start="2024-12-20T23:10:43.266109" elapsed="0.041510"/>
 </kw>
-<status status="PASS" start="2024-12-20T22:59:23.910917" elapsed="0.044270"/>
+<status status="PASS" start="2024-12-20T23:10:43.266109" elapsed="0.041510"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2024-12-20T22:59:26.955878" level="INFO">Slept 3 seconds.</msg>
+<msg time="2024-12-20T23:10:46.308733" level="INFO">Slept 3 seconds.</msg>
 <arg>3s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-12-20T22:59:23.955187" elapsed="3.000691"/>
+<status status="PASS" start="2024-12-20T23:10:43.307619" elapsed="3.001114"/>
 </kw>
 <kw name="Click Lunch">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-12-20T22:59:26.955878" level="INFO">Clicking element '//*[contains(text(),'Lunch')]'.</msg>
+<msg time="2024-12-20T23:10:46.308733" level="INFO">Clicking element '//*[contains(text(),'Lunch')]'.</msg>
 <arg>//*[contains(text(),'Lunch')]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-12-20T22:59:26.955878" elapsed="0.039405"/>
+<status status="PASS" start="2024-12-20T23:10:46.308733" elapsed="0.048839"/>
 </kw>
-<status status="PASS" start="2024-12-20T22:59:26.955878" elapsed="0.039405"/>
+<status status="PASS" start="2024-12-20T23:10:46.308733" elapsed="0.048839"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2024-12-20T22:59:29.995738" level="INFO">Slept 3 seconds.</msg>
+<msg time="2024-12-20T23:10:49.357819" level="INFO">Slept 3 seconds.</msg>
 <arg>3s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-12-20T22:59:26.995283" elapsed="3.000455"/>
+<status status="PASS" start="2024-12-20T23:10:46.357572" elapsed="3.000247"/>
 </kw>
-<status status="PASS" start="2024-12-20T22:59:07.527592" elapsed="22.468146"/>
+<status status="PASS" start="2024-12-20T23:10:26.934753" elapsed="22.423066"/>
 </test>
-<test id="s1-t2" name="Go To Orders" line="24">
-<kw name="Click My Lunch">
+<test id="s1-t2" name="Change Filters" line="24">
+<kw name="Click See All Food">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-12-20T22:59:29.999325" level="INFO">Clicking element '//*[contains(text(),'My Lunch')]'.</msg>
-<arg>//*[contains(text(),'My Lunch')]</arg>
+<msg time="2024-12-20T23:10:49.357819" level="INFO">Clicking element 'xpath=//i[@title="Remove"]'.</msg>
+<arg>xpath=//i[@title="Remove"]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-12-20T22:59:29.999325" elapsed="0.048224"/>
+<status status="PASS" start="2024-12-20T23:10:49.357819" elapsed="0.044823"/>
 </kw>
-<status status="PASS" start="2024-12-20T22:59:29.999325" elapsed="0.048224"/>
+<status status="PASS" start="2024-12-20T23:10:49.357819" elapsed="0.044823"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2024-12-20T22:59:33.048392" level="INFO">Slept 3 seconds.</msg>
+<msg time="2024-12-20T23:10:52.402856" level="INFO">Slept 3 seconds.</msg>
 <arg>3s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-12-20T22:59:30.047549" elapsed="3.000843"/>
+<status status="PASS" start="2024-12-20T23:10:49.402642" elapsed="3.000214"/>
 </kw>
-<kw name="Click My Order History">
+<kw name="Click Filters">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-12-20T22:59:33.050441" level="INFO">Clicking element '//*[contains(text(),'My Order History')]'.</msg>
-<arg>//*[contains(text(),'My Order History')]</arg>
+<msg time="2024-12-20T23:10:52.402856" level="INFO">Clicking element '//*[contains(text(),'Filters')]'.</msg>
+<arg>//*[contains(text(),'Filters')]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-12-20T22:59:33.050441" elapsed="0.039281"/>
+<status status="PASS" start="2024-12-20T23:10:52.402856" elapsed="0.047926"/>
 </kw>
-<status status="PASS" start="2024-12-20T22:59:33.048392" elapsed="0.041330"/>
+<status status="PASS" start="2024-12-20T23:10:52.402856" elapsed="0.047926"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2024-12-20T22:59:36.090097" level="INFO">Slept 3 seconds.</msg>
+<msg time="2024-12-20T23:10:55.451178" level="INFO">Slept 3 seconds.</msg>
 <arg>3s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-12-20T22:59:33.089722" elapsed="3.000375"/>
+<status status="PASS" start="2024-12-20T23:10:52.450782" elapsed="3.000396"/>
 </kw>
-<kw name="Expand Date">
+<kw name="Click Sunday">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-12-20T22:59:36.092937" level="INFO">Clicking element '//*[contains(@class, 'o_group_name')]'.</msg>
-<arg>//*[contains(@class, 'o_group_name')]</arg>
+<msg time="2024-12-20T23:10:55.451178" level="INFO">Clicking element '//*[contains(text(),'Sunday')]'.</msg>
+<arg>//*[contains(text(),'Sunday')]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-12-20T22:59:36.092689" elapsed="0.043674"/>
+<status status="PASS" start="2024-12-20T23:10:55.451178" elapsed="0.044990"/>
 </kw>
-<status status="PASS" start="2024-12-20T22:59:36.090097" elapsed="0.046266"/>
+<status status="PASS" start="2024-12-20T23:10:55.451178" elapsed="0.044990"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2024-12-20T22:59:39.137467" level="INFO">Slept 3 seconds.</msg>
+<msg time="2024-12-20T23:10:58.496690" level="INFO">Slept 3 seconds.</msg>
 <arg>3s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-12-20T22:59:36.136963" elapsed="3.000504"/>
+<status status="PASS" start="2024-12-20T23:10:55.496168" elapsed="3.000522"/>
 </kw>
-<kw name="Price Should Not Be Empty">
-<kw name="Get Text" owner="SeleniumLibrary">
-<msg time="2024-12-20T22:59:39.145522" level="INFO">${price} = $ 5.50</msg>
-<var>${price}</var>
-<arg>xpath=//span[@name="price"]</arg>
-<doc>Returns the text value of the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-12-20T22:59:39.137467" elapsed="0.008055"/>
+<kw name="Filter Says Sunday">
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-12-20T23:10:58.498435" level="INFO">Verifying element 'xpath=//span[@class="o_facet_value"]' contains exact text 'Sunday'.</msg>
+<arg>xpath=//span[@class="o_facet_value"]</arg>
+<arg>Sunday</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-12-20T23:10:58.498218" elapsed="0.015725"/>
 </kw>
-<kw name="Should Not Be Empty" owner="BuiltIn">
-<msg time="2024-12-20T22:59:39.145522" level="INFO">Length is 6.</msg>
-<arg>${price}</arg>
-<doc>Verifies that the given item is not empty.</doc>
-<status status="PASS" start="2024-12-20T22:59:39.145522" elapsed="0.000000"/>
-</kw>
-<status status="PASS" start="2024-12-20T22:59:39.137467" elapsed="0.008055"/>
-</kw>
-<kw name="Product Name Should Not Be Empty">
-<kw name="Get Text" owner="SeleniumLibrary">
-<msg time="2024-12-20T22:59:39.161498" level="INFO">${product} = 4 Formaggi</msg>
-<var>${product}</var>
-<arg>xpath=//td[@name="product_id"]</arg>
-<doc>Returns the text value of the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-12-20T22:59:39.145522" elapsed="0.015976"/>
-</kw>
-<kw name="Should Not Be Empty" owner="BuiltIn">
-<msg time="2024-12-20T22:59:39.161498" level="INFO">Length is 10.</msg>
-<arg>${product}</arg>
-<doc>Verifies that the given item is not empty.</doc>
-<status status="PASS" start="2024-12-20T22:59:39.161498" elapsed="0.000000"/>
-</kw>
-<status status="PASS" start="2024-12-20T22:59:39.145522" elapsed="0.015976"/>
+<status status="PASS" start="2024-12-20T23:10:58.496690" elapsed="0.017253"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2024-12-20T22:59:39.161498" elapsed="2.120998"/>
+<status status="PASS" start="2024-12-20T23:10:58.513943" elapsed="2.137293"/>
 </kw>
-<status status="PASS" start="2024-12-20T22:59:29.995738" elapsed="11.286758"/>
+<status status="PASS" start="2024-12-20T23:10:49.357819" elapsed="11.293417"/>
 </test>
 <doc>Simple example using SeleniumLibrary.</doc>
-<status status="PASS" start="2024-12-20T22:59:07.366191" elapsed="33.916305"/>
+<status status="PASS" start="2024-12-20T23:10:26.758156" elapsed="33.894000"/>
 </suite>
 <statistics>
 <total>
@@ -208,7 +186,7 @@
 <tag>
 </tag>
 <suite>
-<stat pass="2" fail="0" skip="0" id="s1" name="lunchKeyword3">lunchKeyword3</stat>
+<stat pass="2" fail="0" skip="0" id="s1" name="lunchKeyword4">lunchKeyword4</stat>
 </suite>
 </statistics>
 <errors>
