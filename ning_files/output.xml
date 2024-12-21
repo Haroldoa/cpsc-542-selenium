@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1.1 (Python 3.12.1 on win32)" generated="2024-12-20T20:25:48.535760" rpa="false" schemaversion="5">
+<suite id="s1" name="robotframeworkOdooLogin1" source="C:\Github\cpsc-542-selenium\ning_files\robotframeworkOdooLogin1.robot">
+<test id="s1-t1" name="Valid Login" line="10">
+<kw name="Open Browser To Login Page">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-12-20T20:25:48.718155" level="INFO">Opening browser 'Chrome' to base url 'http://localhost:8069/web/login/'.</msg>
+<arg>${LOGIN URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-12-20T20:25:48.718155" elapsed="2.368896"/>
+</kw>
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<msg time="2024-12-20T20:25:51.091785" level="INFO">Page title is 'Login | My Website'.</msg>
+<arg>Login | My Website</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="PASS" start="2024-12-20T20:25:51.087051" elapsed="0.004734"/>
+</kw>
+<status status="PASS" start="2024-12-20T20:25:48.718155" elapsed="2.373630"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-12-20T20:25:56.092046" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-12-20T20:25:51.091785" elapsed="5.000261"/>
+</kw>
+<kw name="Input Username">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-12-20T20:25:56.092388" level="INFO">Typing text 'haroldoalt@gmail.com' into text field 'login'.</msg>
+<arg>login</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-20T20:25:56.092388" elapsed="0.072463"/>
+</kw>
+<arg>haroldoalt@gmail.com</arg>
+<status status="PASS" start="2024-12-20T20:25:56.092388" elapsed="0.072463"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-12-20T20:26:01.165291" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-12-20T20:25:56.164851" elapsed="5.000440"/>
+</kw>
+<kw name="Input Password">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-12-20T20:26:01.165800" level="INFO">Typing text 'openpgpwd' into text field 'password'.</msg>
+<arg>password</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-20T20:26:01.165800" elapsed="0.063977"/>
+</kw>
+<arg>openpgpwd</arg>
+<status status="PASS" start="2024-12-20T20:26:01.165800" elapsed="0.063977"/>
+</kw>
+<kw name="Submit Credentials">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-12-20T20:26:01.229777" level="INFO">Clicking element '//*[contains(text(),'Log in')]'.</msg>
+<arg>//*[contains(text(),'Log in')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-20T20:26:01.229777" elapsed="17.336196"/>
+</kw>
+<status status="PASS" start="2024-12-20T20:26:01.229777" elapsed="17.336196"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-12-20T20:26:23.566431" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-12-20T20:26:18.565973" elapsed="5.000458"/>
+</kw>
+<kw name="Welcome Page Should Be Open">
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<msg time="2024-12-20T20:26:23.569464" level="INFO">Page title is 'Odoo - Discuss'.</msg>
+<arg>Odoo - Discuss</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="PASS" start="2024-12-20T20:26:23.566431" elapsed="0.003033"/>
+</kw>
+<status status="PASS" start="2024-12-20T20:26:23.566431" elapsed="0.003033"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-12-20T20:26:28.569498" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-12-20T20:26:23.569464" elapsed="5.000034"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-12-20T20:26:28.569498" elapsed="2.131957"/>
+</kw>
+<status status="PASS" start="2024-12-20T20:25:48.718155" elapsed="41.983300"/>
+</test>
+<doc>Simple example using SeleniumLibrary.</doc>
+<status status="PASS" start="2024-12-20T20:25:48.536796" elapsed="42.165667"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="robotframeworkOdooLogin1">robotframeworkOdooLogin1</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

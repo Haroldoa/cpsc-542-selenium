@@ -10,15 +10,8 @@ import time
 #https://chromedriver.chromium.org/downloads
 #Check this to make sure your Chrome and selenium driver versions match to each other (or, you may have weird problems)
 
-from selenium.webdriver.chrome.service import Service
-from selenium.webdriver.chrome.options import Options
 
-chrome_options = Options()
-chrome_driver_path = './drivers/chromedriver/chromedriver.exe'  # Path to your ChromeDriver
-
-# Use the Service class to specify driver path
-service = Service(chrome_driver_path)
-driver = webdriver.Chrome(service=service, options=chrome_options)
+driver = webdriver.Chrome('./drivers/chromedriver')
 
 
 def update_form_field(driver, field_name, field_value):
@@ -31,8 +24,8 @@ def update_form_field(driver, field_name, field_value):
 driver.get("http://localhost:8069/web/login")
 print("Ning: Step1 passed")
 
-update_form_field(driver, "login", "haroldoalt@gmail.com")
-update_form_field(driver, "password", "openpgpwd")
+update_form_field(driver, "login", "x@y.com")
+update_form_field(driver, "password", "welovecoco")
 driver.find_element(By.NAME, "login").send_keys(Keys.RETURN)
 print("Ning: I have Logged in!")
 time.sleep(3)
